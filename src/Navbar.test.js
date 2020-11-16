@@ -1,4 +1,5 @@
 import { shallow } from "enzyme";
+
 import Navbar from "./Navbar";
 import { findByTestAttr } from "./test/testUtils";
 
