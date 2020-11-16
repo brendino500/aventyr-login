@@ -1,10 +1,14 @@
+import Navbar from "./Navbar";
 import { Container, Typography } from "@material-ui/core";
 
 function App() {
   return (
-    <Container data-test="component-app">
-      <Typography>Ãventyr</Typography>
-    </Container>
+    <>
+      <Navbar />
+      <Container data-test="component-app">
+        <Typography>Ãventyr</Typography>
+      </Container>
+    </>
   );
 }
 
