@@ -28,3 +28,7 @@ test("renders icon and 'Logga In' text", () => {
 });
 
 test("renders link to regiseter page", () => {});
+
+test("onclick button form validation", () => {});
+
+test("link to register page working", () => {});
