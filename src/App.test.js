@@ -15,13 +15,3 @@ test("App renders without error", () => {
   const appComponent = findByTestAttr(wrapper, "component-app");
   expect(appComponent.length).toBe(1);
 });
-
-test("Navbar Log in button renders", () => {});
-
-test("Login form renders", () => {});
-
-test("Text fields renders", () => {});
-
-test("Form Login Button renders", () => {});
-
-test("Register link renders", () => {});
