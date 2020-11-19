@@ -3,7 +3,6 @@ import { Switch, BrowserRouter, Route } from "react-router-dom";
 
 import Navbar from "./Navbar";
 import LoginForm from "./LoginForm";
-import { Container, Typography } from "@material-ui/core";
 
 function App() {
   return (

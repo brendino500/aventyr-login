@@ -33,3 +33,9 @@ export default function LoginForm() {
     </div>
   );
 }
+
+{
+  /* <a href="https://stories.freepik.com/travel">
+  Illustration by Freepik Stories
+</a>; */
+}
