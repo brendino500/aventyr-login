@@ -1,3 +1,4 @@
+import React from "react";
 import { shallow } from "enzyme";
 
 import LoginForm from "./LoginForm";
@@ -29,8 +30,37 @@ test("renders icon and 'Logga In' text", () => {
   expect(loginText.text().length).not.toBe(0);
 });
 
-test("renders link to register page", () => {});
+test("renders link to register page", () => {
+  const registerLink = findByTestAttr(wrapper, "register-link");
+  expect(registerLink.length).toBe(1);
+});
 
-test("onclick button form validation", () => {});
+describe("state controlled input field", () => {
+  let mockSetEmail = jest.fn();
+  let mockSetPass = jest.fn();
+  let wrapper;
 
-test("link to register page working", () => {});
+  beforeEach(() => {
+    mockSetEmail.mockClear();
+    mockSetPass.mockClear();
+    React.useState = jest.fn(() => ["", mockSetEmail]);
+    React.useState = jest.fn(() => ["", mockSetPass]);
+    wrapper = setup({});
+  });
+
+  test("state updates with value of email address", () => {
+    const emailInput = findByTestAttr(wrapper, "email-input");
+
+    const mockEvent = { target: { value: "klaus@email.com" } };
+    emailInput.simulate("change", mockEvent);
+    expect(mockSetEmail).toHaveBeenCalledWith("klaus@email.com");
+  });
+
+  test("state updates with value of pass", () => {
+    const passInput = findByTestAttr(wrapper, "pass-input");
+
+    const mockEvent = { target: { value: "pass" } };
+    passInput.simulate("change", mockEvent);
+    expect(mockSetPass).toHaveBeenCalledWith("pass");
+  });
+});
