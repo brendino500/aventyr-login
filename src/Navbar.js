@@ -5,7 +5,9 @@ import { AppBar, Toolbar, Typography, Button } from "@material-ui/core/";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    color: "#D9BB20",
+  },
+  appbar: {
+    background: "#D9BB20",
   },
   title: {
     flexGrow: 1,
@@ -14,6 +16,11 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 3,
     color: "#4f4f4f",
   },
+  button: {
+    color: "#4f4f4f",
+    fontFamily: "Unica One",
+    fontSize: 25,
+  },
 }));
 
 export default function Navbar() {
@@ -21,7 +28,7 @@ export default function Navbar() {
 
   return (
     <div data-test="component-navbar" className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Typography data-test="aventyr-home" className={classes.title}>
             Äventyr
