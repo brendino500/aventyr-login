@@ -28,6 +28,10 @@ export default function Navbar() {
 
   return (
     <div data-test="component-navbar" className={classes.root}>
+      {console.log(
+        "%c Coded by Brenda Ty. https://brendaty.com ",
+        "background: #D9BB20; color: #4f4f4f; size: 20"
+      )}
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Typography data-test="aventyr-home" className={classes.title}>
