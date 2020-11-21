@@ -1,6 +1,7 @@
 # ⛰ Login page for Äventyr
 
 ![wireframes](https://i.ibb.co/6W4R2pX/aventyr-login.png)
+![homepage](https://i.ibb.co/X5Yt3hM/aventyr-homepage.png)
 
 ## 📝 Overview
 
