@@ -7,6 +7,8 @@
 
 - First attempt at Test Driven Development (TDD) after doing the Jest and Enzyme course on Udemy by Bonnie Schulkin.
 
+- I wanted to code a simple page to use the knowledge I learnt from the Udemy course. I chose a simple one page form as there is a lot of testing to do even for a simple page.
+
 ## 💾 Technologies
 
 - JavaScript
@@ -15,8 +17,12 @@
 - Enzyme
 - Material UI
 
-Simple single page with Jest testing
+📝 Planning
+![describe-example](https://i.ibb.co/Nxjh6Tw/describe-example.png)
 
-![basic-tests](https://i.ibb.co/w4jBGCt/example-simple-tdd.png)
+- This was the first time I tried TDD.
 
+⛏ Challenges
+
+⛱ Sources
 <a href="https://stories.freepik.com/travel">Illustration by Freepik Stories</a>
